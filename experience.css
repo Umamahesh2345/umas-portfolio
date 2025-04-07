@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+padding:15px;
+}
+h2{
+text-decoration:underline;
+font-family:cursive;
+}
+h3{
+text-decoration:underline;
+font-family:cursive;
+}
