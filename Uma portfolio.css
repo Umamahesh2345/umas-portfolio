@@ -117,8 +117,77 @@ color:#212121;
 font-family:cursive;
 margin-bottom:5px;
 }
+@media (max-width: 768px) {
+  .a {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .c {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .c h1 {
+    font-size: 28px;
+  }
+
+  .c p {
+    font-size: 14px;
+  }
+
+  .c a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .d {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .d img,
+  .e,
+  .f {
+    position: relative;
+    left: 0;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .g {
+    margin-left: 5%;
+  }
 
   .g a {
-    font-size: 28px;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 8px 10px;
+  }
+
+  .c h1 {
+    font-size: 24px;
+  }
+
+  .c a {
+    font-size: 12px;
+  }
+
+  .g a {
+    font-size: 20px;
   }
 }
