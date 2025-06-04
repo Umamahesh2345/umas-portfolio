@@ -1,127 +1,81 @@
-/* RESET & BASE */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.a{
+height:100vh;
+width:100%;
+background:linear-gradient(to bottom right, #b5ead7, #85f4ff, #e0bbe4); 
+font-family:cursive;
+position:relative;
 }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: cursive;
-  overflow-x: hidden;
+nav{
+width:84%;
+margin:auto;
+padding:20px 0;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
-
-/* MAIN CONTAINER */
-.a {
-  min-height: 100vh;
-  width: 100%;
-  background: linear-gradient(to bottom right, #b5ead7, #85f4ff, #e0bbe4);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 40px;
+.b{
+width:100px;
+cursor:pointer;
 }
-
-/* NAVBAR */
-nav {
-  width: 90%;
-  margin: auto;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+nav ul li{
+display:inline-block;
+list-style:none;
+margin:10px 20px;
 }
-
-.b {
-  width: 100px;
-  cursor: pointer;
-  border-radius: 50%;
+nav ul li a{
+text-decoration:none;
+color:black;
 }
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+nav ul li a:hover{
+color:blue;
 }
-
-nav ul li {
-  list-style: none;
+.c{
+margin-left:8%;
+margin-top:15%;
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
+.c h1{
+font-size:40px;
+color:#212121;
+margin-bottom:10px;
 }
-
-nav ul li a:hover {
-  color: blue;
+.c p{
+color:#212121;
+line-height:22px;
 }
-
-/* TEXT SECTION */
-.c {
-  margin-left: 8%;
-  margin-top: 5%;
-  max-width: 600px;
+.c a{
+background:#212121;
+padding:0;
+text-decoration:none;
+color:white;
+display:inline-block;
+margin:30px 0;
+border-radius:25px;
+font-family:cursive;
 }
-
-.c h1 {
-  font-size: 40px;
-  color: #212121;
-  margin-bottom: 10px;
+.d{
+width:45%;
+height:80%;
+position:absolute;
+bottom :0;
+right:100px;
 }
-
-.c h1 span {
-  color: green;
-  font-style: italic;
-}
-
-.c h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #212121;
-}
-
-.c h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: #212121;
-}
-
-.c p {
-  color: #212121;
-  line-height: 24px;
-  font-size: 16px;
-}
-
-.c a {
-  background: #212121;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  margin-top: 20px;
-  border-radius: 25px;
-  transition: background 0.3s;
-}
-
-.c a:hover {
-  background: #444;
-}
-
-/* IMAGE SECTION */
-.d {
-  width: 45%;
-  height: 80%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-}
-
 .d img {
+  height: 90%;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 50%;
+  /* Remove animation & translation */
+  transform: none;
+  transition: none;
+}
+.e, .f {
   height: 90%;
   position: absolute;
   left: 20%;
@@ -131,97 +85,38 @@ nav ul li a:hover {
   transition: none;
 }
 
-.e, .f {
-  height: 90%;
-  position: absolute;
-  left: 20%;
-  bottom: 0;
-  width: 50%;
-}
-
-/* HOVER ANIMATION (OPTIONAL) */
 .d:hover .e {
-  bottom: 0;
+  bottom: 0; /* reset to original */
 }
 
 .d:hover .f {
-  left: 20%;
+  left: 20%; /* reset to original */
 }
-
-/* SOCIAL ICONS */
-.g {
-  margin-left: 8%;
-  margin-top: 20px;
+.g{
+margin-left:8%;
+margin-top:20px;
 }
-
-.g a {
-  font-size: 35px;
-  color: black;
-  margin-right: 20px;
-  transition: color 0.3s;
+.g a{
+font-size:35px;
+color:black;
+margin-right:20px;
 }
-
-.g a:hover {
-  color: #0077cc;
+.c h1 span{
+color:green;
+font-style:cursive; 
 }
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .a {
-    padding: 20px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding-left: 0;
-  }
-
-  .c {
-    margin: 20px 0;
-    max-width: 100%;
-  }
-
-  .d {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-
-  .d img {
-    position: static;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .g {
-    margin: 20px 0;
-  }
+.c h1{
+font-family:cursive; 
 }
-
-@media (max-width: 480px) {
-  .c h1 {
-    font-size: 28px;
-  }
-
-  .c h2 {
-    font-size: 22px;
-  }
-
-  .c h3 {
-    font-size: 18px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
+.c h2{
+font-family:cursive;
+margin-bottom:10px;
+color:#212121;
+}
+.c h3{
+font-family:cursive;
+margin-bottom:5px;
+}
 
   .g a {
     font-size: 28px;
