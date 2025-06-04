@@ -65,21 +65,33 @@ position:absolute;
 bottom :0;
 right:100px;
 }
-.d img{
-height:90%;
-position:absolute;
-left:20%;
-bottom:0;
-width:50%;
-transform:translateX(-20%);
-transition:bottom 1s,left 1s;
+.d img {
+  height: 90%;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 50%;
+  transform: none;
+  transition: none;
 }
-.d:hover .e{
-bottom:40px;
+.e, .f {
+  height: 90%;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 50%;
+  transform: none;
+  transition: none;
 }
-.d:hover .f{
-left:35px;
+
+.d:hover .e {
+  bottom: 0; 
 }
+
+.d:hover .f {
+  left: 20%; 
+}
+
 .g{
 margin-left:8%;
 margin-top:20px;
